@@ -1,6 +1,8 @@
 ﻿using ConcertCI;
+using ConcertSearchApi.Api;
 using Moq;
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -9,8 +11,13 @@ using System.Linq;
 namespace TestsForCI
 {
     [TestFixture]
-    public class MockTests
+    public class TestsCI
     {
+        private KudaGoSearchApi kudago;
+        public TestsCI()
+        {
+            kudago = new KudaGoSearchApi();
+        }
 
         [Test]
         public void GetAllUsers()
@@ -90,6 +97,22 @@ namespace TestsForCI
             Assert.AreEqual(service.FindUser(find_id), null);
             //MockSet.Verify(m => m.Add(It.IsAny<tblUser>()), Times.Exactly(2));
             //mockContext.Verify(m => m.SaveChanges(), Times.Exactly(2));
+        }
+
+        [Test]
+        public void GetAllConcertsByGroupTestNull()
+        {
+            string groupName = null;
+            kudago.GetAllConcertsByGroup(groupName);
+            
+            Assert.Null(kudago.GetAllConcertsByGroup(groupName));
+        }
+
+        [Test]
+        public void GetAllConcertsByGroupTestEmpty()
+        {
+            var groupName = String.Empty;
+            Assert.Null(kudago.GetAllConcertsByGroup(groupName));
         }
 
         [Test]
