@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcertCI", "ConcertCI\ConcertCI.csproj", "{378A6621-A24A-460E-9D63-3068592B3E63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsForCI", "TestsForCI\TestsForCI.csproj", "{6C206AC8-4214-4932-AFA1-B6774AAAE82C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{378A6621-A24A-460E-9D63-3068592B3E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{378A6621-A24A-460E-9D63-3068592B3E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{378A6621-A24A-460E-9D63-3068592B3E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C206AC8-4214-4932-AFA1-B6774AAAE82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C206AC8-4214-4932-AFA1-B6774AAAE82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C206AC8-4214-4932-AFA1-B6774AAAE82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C206AC8-4214-4932-AFA1-B6774AAAE82C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
