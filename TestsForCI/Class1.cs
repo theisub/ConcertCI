@@ -129,7 +129,8 @@ namespace TestsForCI
 
             };
 
-            int idToDelete = 111;
+            //строка изменена для теста
+            int idToDelete = 112; 
 
             mockContext
                 .Setup(s => s.tblGroups.Find(idToDelete))
