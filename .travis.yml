@@ -1,0 +1,8 @@
+language: csharp
+solution: ConcertCI.sln
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore ConcertCI.sln
+after_script:
+  - nunit-console TestsForCI/bin/Release/TestsForCI.dll
